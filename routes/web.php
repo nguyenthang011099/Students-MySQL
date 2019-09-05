@@ -15,6 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/view', function () {
-    return view('view');
-});
+Route::get('/view', 'StudentController@view');
