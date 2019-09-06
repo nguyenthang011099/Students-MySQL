@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Student;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
@@ -20,5 +21,11 @@ class StudentController extends Controller
             ->get();
         return view('sortbyclass',['students'=>$students]);
     }
+    public function searchage(){
+        $students = Student::where('class',10)
+            ->get();
+        return view('searchage',['students'=>$students]);
+    }
+
 
 }
