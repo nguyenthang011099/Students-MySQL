@@ -14,11 +14,11 @@ class StudentController extends Controller
             ->get();
         return view('sortbyage',['students'=>$students]);
     }
-    public function search(){
+    public function sortbyclass(){
         $students = DB::table('students')
             ->orderBy('class')
             ->get();
-        return view('search',['students'=>$students]);
+        return view('sortbyclass',['students'=>$students]);
     }
 
 }
