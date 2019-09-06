@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/view', 'StudentController@view');
+Route::get('/sortbyage', 'StudentController@sortbyage');
+Route::get('/search','StudentController@search');
