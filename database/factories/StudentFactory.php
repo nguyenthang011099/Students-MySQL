@@ -2,10 +2,11 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Model;
-use Faker\Generator as Faker;
 
-$factory->define(App\Student::class, function (Faker $faker) {
+use Faker\Factory as Faker;
+
+$factory->define(App\Student::class, function ( $faker) {
+    $faker = Faker::create('vi_VN');
     return [
 
         'name' => $faker->name,
