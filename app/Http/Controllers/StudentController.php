@@ -22,10 +22,11 @@ class StudentController extends Controller
         return view('sortbyclass',['students'=>$students]);
     }
     public function searchage(){
-        $students = Student::where('class',10)
+        $students = Student::where('class',8)
             ->get();
         return view('searchage',['students'=>$students]);
     }
+
 
 
 }

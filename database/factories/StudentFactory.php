@@ -10,8 +10,8 @@ $factory->define(App\Student::class, function ( $faker) {
     return [
 
         'name' => $faker->name,
-        'age' =>$faker->numberBetween(10,18),
-        'class' =>$faker->numberBetween(5,12),
+        'age' =>$faker->numberBetween(13,18),
+        'class' =>$faker->numberBetween(8,12),
         'created_at' => new DateTime,
         'updated_at' => new DateTime,
     ];
