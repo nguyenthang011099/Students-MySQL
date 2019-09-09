@@ -22,13 +22,18 @@
 </head>
 <body>
 
-<h2>HTML Table</h2>
+@if(count($students) > 0)
+    <h2>Danh Sach Hoc Sinh Lop {{ $students[0]->class  }}</h2>
+@else
+    <h2>Danh Sach Hoc Sinh  </h2>
+@endif
 
 
-
-<form method="get" action="/search"> {{ csrf_field() }}
+<form method="get" action="/search">
     <input class="input search-input" type="text" placeholder="Enter your keyword" name="query">
     <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+    <input type="submit" value="Submit">
+
 </form>
 <table>
     <tr>
