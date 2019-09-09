@@ -22,14 +22,14 @@
 </head>
 <body>
 
-<h2>Danh sach Hoc Sinh</h2>
+<h2>HTML Table</h2>
 
 
 
-        <form method="get" action="/search"> {{ csrf_field() }}
-            <input class="input search-input" type="text" placeholder="Enter your keyword" name="query">
-            <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
-        </form>
+<form method="get" action="/search"> {{ csrf_field() }}
+    <input class="input search-input" type="text" placeholder="Enter your keyword" name="query">
+    <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+</form>
 <table>
     <tr>
         <th>ID</th>
