@@ -30,7 +30,7 @@
         <th>Name</th>
 
         <th>
-            <a href="http://127.0.0.1:8000/sortbyageup">Age up</a>
+            <a href="/sortbyageup">Age up</a>
         </th>
     </tr>
     @foreach($students as $student)

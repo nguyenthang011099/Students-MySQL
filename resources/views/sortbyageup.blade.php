@@ -29,7 +29,9 @@
         <th>ID</th>
         <th>Name</th>
 
-        <th>Age</th>
+        <th>
+            <a href="/sortbyagedown">Age Down</a>
+        </th>
     </tr>
     @foreach($students as $student)
         <tr>
