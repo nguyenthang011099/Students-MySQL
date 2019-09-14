@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sortbyage', 'StudentController@sortbyage');
-
+Route::get('/sortbyagedown', 'StudentController@sortbyagedown');
+Route::get('/sortbyageup', 'StudentController@sortbyageup');
 Route::get('/sortbyclass','StudentController@sortbyclass');
 Route::get('/searchage','StudentController@searchage');
 Route::get('/search','StudentController@search');

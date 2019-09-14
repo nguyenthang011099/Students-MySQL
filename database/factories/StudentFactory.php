@@ -11,7 +11,7 @@ $factory->define(App\Student::class, function ( $faker) {
 
         'name' => $faker->name,
         'age' =>$faker->numberBetween(13,18),
-        'class' =>$faker->numberBetween(8,12),
+        'id_class' =>$faker->numberBetween(8,12),
         'created_at' => new DateTime,
         'updated_at' => new DateTime,
     ];

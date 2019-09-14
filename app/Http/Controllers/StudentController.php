@@ -10,13 +10,22 @@ use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
-    public function sortbyage(){
+    public function sortbyagedown(){
        // $students=Student::all();
         $students = DB::table('students')
             ->orderBy('age','desc')
             ->get();
-        return view('sortbyage',['students'=>$students]);
+        return view('sortbyagedown',['students'=>$students]);
     }
+
+    public function sortbyageup(){
+        // $students=Student::all();
+        $students = DB::table('students')
+            ->orderBy('age')
+            ->get();
+        return view('sortbyageup',['students'=>$students]);
+    }
+
     public function sortbyclass(){
         $students = DB::table('students')
             ->orderBy('class')
