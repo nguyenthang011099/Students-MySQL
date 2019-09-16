@@ -20,6 +20,7 @@ Route::get('/sortbyageup', 'StudentController@sortbyageup');
 Route::get('/sortbyclass','StudentController@sortbyclass');
 Route::get('/searchage','StudentController@searchage');
 Route::get('/search','StudentController@search');
+Route::get('/create','StudentController@create');
 
 
 
