@@ -46,9 +46,9 @@ class StudentController extends Controller
     }
 
     public function create(Request $request){
-        $name=$request->get('name');
-        $age=$request->get('age');
-        $class=$request->get('class');
+        $name=$request['name'];
+        $age=$request['age'];
+        $class=$request['class'];
 
         $student= new Student();
 

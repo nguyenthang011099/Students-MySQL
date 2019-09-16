@@ -41,6 +41,15 @@
                     </div>
                 </form>
             </div>
+            <div class="col-md-6">
+                <table class="table table-striped table-hover">
+                    <tr>
+                        <th>name</th>
+                        <th>age</th>
+                        <th>class</th>
+                    </tr>
+                </table>
+            </div>
             <div class="col-md-6"></div>
         </div>
     </div>

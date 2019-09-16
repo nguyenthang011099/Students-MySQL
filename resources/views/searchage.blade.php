@@ -1,58 +1,48 @@
-
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <style>
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-    </style>
+    <title>Student</title>
 </head>
 <body>
+<div class="container-fuild">
 
-<h2>Danh sach Hoc Sinh</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <form action=""method="get" enctype="multipart/form-data">
 
-
-
-        <form method="get" action="/search"> {{ csrf_field() }}
-            <input class="input search-input" type="text" placeholder="Enter your keyword" name="query">
-            <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
-        </form>
-<table>
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-
-        <th>Class</th>
-    </tr>
-    @foreach($students as $student)
-        <tr>
-            <td>
-                {{$student->id}}
-            </td>
-
-            <td>
-                {{$student->name}}
-            </td>
-            <td>
-                {{$student->class}}
-            </td>
-        </tr>
-    @endforeach
-
-</table>
-
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label for="">Name:</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label for="">Age:</label>
+                        <input type="text" name="age" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label for="">Class:</label>
+                        <input type="text" name="class" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-success">Create</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+</div>
 </body>
 </html>
